@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Device Pixel Ration</title>
+    <style>
+      body {
+        color: #eef2f2;
+        background-color: #444;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="dpr">hasdf</div>
+  </body>
+  <script>
+    function getDPR() {
+      const dpr = window.devicePixelRatio
+      document.getElementById('dpr').innerHTML = dpr
+    }
+    document.addEventListener('DOMContentLoaded', getDPR)
+  </script>
+</html>
