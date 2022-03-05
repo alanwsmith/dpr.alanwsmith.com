@@ -9,10 +9,44 @@
         color: #eef2f2;
         background-color: #444;
       }
+      h1 {
+        text-align: center;
+      }
+      #dpr {
+        padding-top: 2rem;
+        font-size: 4rem;
+        font-weight: bold;
+        text-align: center;
+      }
+      main {
+        position: absolute;
+        top: 0;
+        bottom: 4.8rem;
+        width: 97%;
+      }
+      footer {
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        height: 4.8rem;
+        width: 97%;
+      }
+      a {
+        color: green;
+      }
     </style>
   </head>
   <body>
-    <div id="dpr">hasdf</div>
+    <main>
+      <h1>Your current<br />Device Pixel Ratio<br />is<br /></h1>
+      <div id="dpr"></div>
+    </main>
+    <footer>
+      made by <a href="https://twitter.com/TheIdOfAlan">Alan W. Smith</a>
+      <br />who has a <a href="https://www.alanwsmith.com">website</a> and a
+      <a href="https://podcast.alanwsmith.com/">podcast</a> <br />among other
+      <a href="https://links.alanwsmith.com">things</a>.
+    </footer>
   </body>
   <script>
     function getDPR() {
